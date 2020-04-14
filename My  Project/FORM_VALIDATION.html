@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> DATA </title>
+        <link rel="stylesheet" href="FORM_VALIDATION.css">
+        <script src="FORM_VALIDATION.js"></script>
+    </head>
+    <body>
+        <form id="form" onsubmit="return Email() && Passt() && conf() && capt()" action="SIgn_in.html">
+            <h2> Sign Up Here !!! </h2>
+            <div id="formdiv">
+               
+            <div class="nav">
+            <label class="labl" for="Name"> Name : </label>
+            <input type="text" id="Name"/> 
+            </div> <br>
+            <div class="nav">
+            <label class="labl" for="address"> Address : </label>
+            <input type="text" id="address"/>
+            </div> <br>
+            <div class="nav">
+            <label class="labl" for="phone"> Phone No. : </label>
+            <input type="text" id="phone"/>
+            </div><br>
+            <div class="nav">
+            <label for="email" class="labl"> E-Mail : </label>
+            <input type="text" id="email"/> 
+            <label id="lbl" style="color: red; visibility: hidden;"> Wrong Id </label>
+            </div><br>
+            <div class="nav"> 
+            <label class="labl" for="pass"> Password : </label>
+            <input type="password" id="pass"/>
+            <p id="div"> for Example : aditish98# </p>
+            <label id="lbl2" style="color: red; visibility: hidden;"> Wrong Format </label>
+            </div><br>
+            <div class="nav">
+            <label class="labl" for="cnfrm"> Confirm Password : </label>
+            <input type="password" id="cnfrm"/> 
+            <label id="lbl3" style="color: red; visibility: hidden;"> doesn't match </label>
+            </div><br>
+            </div>
+            <div>
+            <input id="captcha" type="checkbox"> Agree Terms and Conditions </input><br><br>
+            <button type="submit"> Sign Up </button>
+            </div>
+        </form>
+    </body>
+</html>

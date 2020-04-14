@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> Sign In </title>
+        <link rel="stylesheet" href="Sign_in.css">
+        <script src="Sign_in.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="site"> rudrashiva.com</h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li> <a href=""> Home </a> </li>
+                <li> <a href=""> Careers </a> </li>
+                <li> <a href=""> About Us </a> </li>
+                <li> <a href=""> Contact Us </a> </li>
+                <li> <a href="FORM_VALIDATION.html"> Sign Up </a> </li>
+            </ul>
+        </div>
+        <div id="signin">
+            <form onsubmit="return usern() && passn()" action="MAIN.html">
+                <label id="lbl" style="color: red; visibility: hidden;"> Invalid Username or Password </label><br>
+                <label for="user"> Username : </label>
+                <input type="text" id="user"/> <br><br>
+                <label for="pass"> Password : </label>
+                <input type="password" id="pass"><br><br>
+                <button type="submit"> Sign In </button>
+            </form>
+        </div>
+        <div id="img">
+            <h1 id="head"> ELECTRONIC PRODUCTS : </h1>
+            <img src="Images/download.jpg" height="300" width="700">
+        </div>
+    </body>
+</html>
